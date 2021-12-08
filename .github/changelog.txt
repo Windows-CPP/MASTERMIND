@@ -3,7 +3,7 @@ This is the changelog for MASTERMIND.
 v0.1 - 12/1/2021; ??:?? - The Base Update
   Added base features, basic game. 
 
-v1.0 - 12/1/2021; ??:?? - 'Big-Time Winner' Update
+v0.8 + v1.0 - 12/1/2021; ??:?? - 'Big-Time Winner' Update
   Added the ablility to actually 'Win' the game, and keeps track of wins. 
   Changed some code.
 
