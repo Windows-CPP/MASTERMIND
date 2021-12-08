@@ -18,5 +18,5 @@ For now, I'll keep the game open-source under the GNU GPLv3 license; But that ma
 On top of this, a lot of credit goes to Meirowitz for the original idea of Mastermind, and I'm just expanding on it. 
 
 - Contact the Dev! -
-Did you find a bug? Spelling or grammar mistake? Just want to follow me? Well, you can do all that from my GitHub! <https://www.github.com/Windows-CPP>
+You can contact me via my GitHub if needed, for any reason. (If I set up my email, that is) <https://www.github.com/Windows-CPP>.
 You can email me (If I set up my email), follow me on Twitter, or view other projects that I've worked on!
