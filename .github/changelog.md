@@ -1,4 +1,4 @@
-This is the changelog for MASTERMIND. 
+## MASTERMIND Changelog
 
 v0.1 - 12/1/2021; ??:?? - The Base Update
   Added base features, basic game. 
