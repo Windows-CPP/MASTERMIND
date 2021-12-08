@@ -7,11 +7,11 @@ v0.8 + v1.0 - 12/1/2021; ??:?? - 'Big-Time Winner' Update
   * Added the ablility to actually 'Win' the game, and keeps track of wins. 
   * Changed some code.
 
-v2.0 - 12/1/2021; ??:?? - Day 0 Error Patch 1
+v2.0 - 12/1/2021; ??:?? - Day 0 Patch 1
   * Fixed a few issues, including grammatical and spelling errors. 
   * Fixed small-scale miscelanious code.
 
-v2.4 - 12/1/2021; ??:?? - Day 0 Error Patch 2
+v2.4 - 12/1/2021; ??:?? - Day 0 Patch 2
   * Changed the formatting of said basic code. 
 
 v2.8 - 12/1/2021; 11:50 - 'Speedy Badger' Update
