@@ -4,7 +4,7 @@
 # Imports + Establishments.
 from random import randint
 from subprocess import call, os
-from ex_functions import seq, seq_2, seq_3, check_1, check_2, check_3, clear, menu
+from ext_func import seq, seq_2, seq_3, check_1, check_2, check_3, clear, menu
 code = [] # The secret code.
 tri = 0 # The number of times the user has tried to break the code.
 count = 0 # I... I actually don't know what this variable does... Should probably figure that out.
