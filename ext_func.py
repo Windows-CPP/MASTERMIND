@@ -90,11 +90,11 @@ def check_3(gs0, gs1, gs2, gs3, gs4, gs5, gs6, gs7):
   
 
 
-# (This code was taken from GeeksForGeeks, <https://www.geeksforgeeks.org/clear-screen-python/>).
+# (This code was taken from StackOverflow, <https://stackoverflow.com/questions/2084508/clear-terminal-in-python>).
 # This code just clears all the text output in the terminal.
 def clear():
     # check and make call for specific operating system
-    _ = call('clear' if os.name =='posix' else 'cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 # Well, it's meant to read the leaderboards file, but I'm still working on that. Should be done for v3.0.
@@ -110,6 +110,8 @@ def menu():
   start = False # A bool for whether the user selected start on the menu or not. 
   while(start == False):
 
+    clear()
+    quit = False
     print("MASTERMIND v2.8.2")
     print("S - Start")
     print("L - Leaderboards")

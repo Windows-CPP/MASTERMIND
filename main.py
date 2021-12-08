@@ -3,7 +3,7 @@
 
 # Imports + Establishments.
 from random import randint
-from subprocess import call, os
+from os import __name__, system
 from ext_func import seq, seq_2, seq_3, check_1, check_2, check_3, clear, menu
 code = [] # The secret code.
 tri = 0 # The number of times the user has tried to break the code.
@@ -11,6 +11,7 @@ count = 0 # I... I actually don't know what this variable does... Should probabl
 won = False # Whether the user has won the game or not.
 games = 1 # The number of games played.
 difficulty = 1 # The selected difficulty (See README.TXT for more information.)
+quit = False # Wether or not the user quit during gameplay.
 
 
 #** Custom Functions. **#
@@ -67,16 +68,22 @@ while(count != 4 and won == False):
   print("")
   print("You entered: " + str(gus0) + str(gus1) + str(gus2) + str(gus3) + ".")
   print("You guessed " + str(count) + " correctly.")
-  print("Current attempt:" + str(tri))
-  input("Press ENTER to continue...")
+  print("Current attempt: " + str(tri))
+  play = input("Press ENTER to continue, or enter STOP to quit playing... ")
+  if(play == "STOP" or play == 'stop'):
+      quit = True
+      count = 0
+      code = []
+
   clear()
   print("")
 
   # Winning + Replay Logic.
-  if(count == 4):
-    print("You guessed the code correctly. Excellent work. It took you " + str(tri) + " total attempt(s). You have played " + str(games) + " round(s). ")
-    play = str(input("Would you like to play again? (Y/N): "))
-    games = games + 1
+  if(count == 4 or quit == True):
+    if(count == 4):
+        print("You guessed the code correctly. Excellent work. It took you " + str(tri) + " total attempt(s). You have played " + str(games) + " round(s). ")
+        play = str(input("Would you like to play again? (Y/N): "))
+        games = games + 1
 
     if(play == "Y" or play == "y"):
       tri = 0
@@ -89,6 +96,10 @@ while(count != 4 and won == False):
       elif(games > 6): # Increase the difficulty after six games are won.
         seq_3()
       print("\n\n")
+    elif(quit == True):
+        tri = 0
+        count = 0
+        code = []
     elif(play == "N" or play == "n"):
       clear()
       menu()
